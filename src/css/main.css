@@ -1,0 +1,156 @@
+/*GLOBAL*/
+h2 {
+    color:rgb(226, 44, 44) !important;
+}  
+
+strong {
+    font-weight: bold;
+}
+
+span {
+    color: orange;
+}
+
+.hero {
+    border-radius: 10px;
+}
+
+/* HEADER */
+.header {
+    width: 100%;
+    margin: 0;
+    height:50px;
+    line-height: 50px; /* centrer horizontalement */
+    position: fixed; /* une fois qu'on a scroll le menu */ 
+    top: 0;
+    z-index: 999;
+    /* background-color: seashell; */
+
+}
+
+.header-logo {
+    color: white;
+    max-width: 200px;
+    float: left;    /* aligner avec le menu*/
+    margin-left: 30px;
+}
+
+.header-menu {
+    float: right;
+    margin-right: 30px;
+    border-radius: 10px;
+}
+
+.header-menu a {
+    margin-right: 30px;
+    font-weight: bold;
+    color : white;
+    text-shadow: 1px 0 0 black, 0 1px 0 black, 0 -1px 0 black, -1px 0 0 black, 1px 1px 0 black, 1px -1px 0 black, -1px 1px 0 black, -1px -1px 0 black;
+    text-shadow: black 0px 0px 5px;
+}
+
+.header-menu a:hover {
+    color:  rgb(226, 44, 44);
+}
+
+/* banner */
+.banner {
+    margin-top: -30px;
+}
+
+.banner-img {
+    position:relative;
+    height: 100vh;    
+    width: 100%;
+}
+
+.banner h1 {
+    color: white;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    top: 60%;
+}
+
+/*VISION*/
+.hero.has-background {
+    position: relative;
+    overflow: hidden;
+}
+.hero-background {
+    position: absolute;
+    object-fit: cover;
+    object-position: center center;
+    width: 100%;
+    height: 100%;
+}
+.hero-background.is-transparent {
+    opacity: 0.3;
+}
+
+.vision-div {
+    text-align: justify;
+    z-index: 1;
+}
+
+.vision-text {
+    padding-left: 0 !important;
+}
+
+.vision-grid {
+    display: grid;
+    grid-template-rows: repeat(1fr,3);
+    grid-template-columns: repeat(1fr,2);
+    grid-column-gap: 5%;
+}
+
+.rows-text {
+    text-align:center;
+}
+
+.rows-text .column{
+    color: green;
+}
+
+/*MISSIONS*/
+
+.is-child {
+    text-align: center;
+
+}
+
+/*PROFILE*/
+
+.profile p {
+    text-align: justify;
+}
+
+.coordonnees {
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 1) 3px 3px 10px;
+    width: min-content;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.coordonnees div {
+    color: red;
+}
+
+.box_citation {
+    border: 1px solid green !important;
+}
+
+.media-content p {
+    color: green;
+    text-align: center;
+}
+/*RETOURS*/
+
+/* FOOTER */
+
+@media screen and (max-width: 1080px) { /* for screen size less or equal to 320px*/
+    .banner h1 {
+        top: 40%;
+    }
+}
