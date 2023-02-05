@@ -1,4 +1,5 @@
 /*GLOBAL*/
+
 h2 {
     color:rgb(226, 44, 44) !important;
 }  
@@ -91,6 +92,7 @@ span {
 .vision-div {
     text-align: justify;
     z-index: 1;
+    padding: 10px;
 }
 
 .vision-text {
@@ -148,6 +150,9 @@ span {
 /*RETOURS*/
 
 /* FOOTER */
+footer {
+    padding-left: 30px;
+}
 
 @media screen and (max-width: 1080px) { /* for screen size less or equal to 320px*/
     .banner h1 {
